@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="36" fill="#2f6fed"/>
+  <text x="96" y="112" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="88" font-weight="700"
+        fill="#ffffff" text-anchor="middle">A</text>
+  <text x="96" y="150" font-family="'Noto Sans TC', Arial, sans-serif" font-size="34" font-weight="700"
+        fill="#ffffff" text-anchor="middle">英文</text>
+</svg>

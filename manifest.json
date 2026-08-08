@@ -1,0 +1,26 @@
+{
+  "name": "語言學習卡",
+  "short_name": "語言學習卡",
+  "description": "自建單字卡學習 App：輸入你看過的英文/日文單字或句子，記下解釋、例句與翻譯，間隔複習，跨裝置同步",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101418",
+  "theme_color": "#2f6fed",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
