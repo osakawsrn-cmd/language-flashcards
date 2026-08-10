@@ -1,6 +1,7 @@
 import Home from './views/Home.js';
 import AddCard from './views/AddCard.js';
 import Library from './views/Library.js';
+import Study from './views/Study.js';
 import Review from './views/Review.js';
 import Settings from './views/Settings.js';
 import * as gdrive from './gdrive.js';
@@ -15,7 +16,7 @@ const NAV_ITEMS = [
 ];
 
 const App = {
-  components: { Home, AddCard, Library, Review, Settings },
+  components: { Home, AddCard, Library, Study, Review, Settings },
   setup() {
     const view = ref('Home');
     const params = ref(null);

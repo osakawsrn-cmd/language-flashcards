@@ -37,6 +37,13 @@ export default {
 
     const canSave = computed(() => form.text.trim().length > 0);
 
+    function backTarget() {
+      if (isEdit && props.params?.returnView) {
+        return [props.params.returnView, { cardId: editingId, filter: props.params.returnFilter }];
+      }
+      return [isEdit ? 'Library' : 'Home'];
+    }
+
     async function save() {
       if (!canSave.value || saving.value) return;
       saving.value = true;
@@ -77,7 +84,7 @@ export default {
 
       saving.value = false;
       gdrive.scheduleBackgroundSync();
-      props.navigate('Library');
+      props.navigate(...backTarget());
     }
 
     async function remove() {
@@ -89,12 +96,16 @@ export default {
       props.navigate('Library');
     }
 
-    return { isEdit, loaded, form, saving, canSave, save, remove, navigate: props.navigate };
+    function goBack() {
+      props.navigate(...backTarget());
+    }
+
+    return { isEdit, loaded, form, saving, canSave, save, remove, goBack, navigate: props.navigate };
   },
   template: `
   <div class="screen">
     <div class="top-bar">
-      <button class="back" @click="navigate(isEdit ? 'Library' : 'Home')">←</button>
+      <button class="back" @click="goBack">←</button>
       <h1>{{ isEdit ? '編輯卡片' : '新增單字/句子' }}</h1>
     </div>
 

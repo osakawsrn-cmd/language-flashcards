@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lang-app-shell-v1';
+const CACHE_NAME = 'lang-app-shell-v2';
 
 const SHELL_FILES = [
   './',
@@ -14,6 +14,7 @@ const SHELL_FILES = [
   './js/views/Home.js',
   './js/views/AddCard.js',
   './js/views/Library.js',
+  './js/views/Study.js',
   './js/views/Review.js',
   './js/views/Settings.js',
   './icons/icon.svg',

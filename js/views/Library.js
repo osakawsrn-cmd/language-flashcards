@@ -29,7 +29,7 @@ export default {
     });
 
     function openCard(card) {
-      props.navigate('AddCard', { cardId: card.id });
+      props.navigate('Study', { cardId: card.id, filter: filterLang.value });
     }
 
     function addNew() {
